@@ -267,11 +267,17 @@ img{
 /* 모바일 */
 @media screen and (max-width: 768px) {
 
+    body {
+        zoom: 1 !important;
+    }
+
     .wrap {
-        zoom: 1;
+        zoom: 1 !important;
+        width: 100%;
     }
 
     .header {
+        width: 100%;
         height: auto;
         padding: 20px;
         flex-direction: column;
@@ -292,19 +298,23 @@ img{
     }
 
     .main {
+        width: 100%;
         padding: 80px 20px;
     }
 
-    .main-3 {
-        width: 100%;
-        padding: 0 20px 100px;
+    .main-3,
+    .main-b1 {
+        width: 100% !important;
+        padding-left: 20px;
+        padding-right: 20px;
         flex-direction: column;
-        gap: 30px;
     }
 
-    .main-3 img {
+    .main-3 img,
+    .main-b1 img {
         width: 100%;
         max-width: 420px;
+        height: auto;
     }
 
     .footer {
@@ -319,7 +329,7 @@ img{
     }
 
     .main-4-2 iframe {
-        width: 90%;
-        height: 400px;
+        width: 90% !important;
+        height: 350px !important;
     }
 }
