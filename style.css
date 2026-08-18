@@ -1,0 +1,265 @@
+@font-face {
+    font-family: "HSJiptokki-Black";
+    src: url("./HSJiptokki-Black.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "116watermelon";
+    src: url("C:\Users\kny20\Desktop\가죽공방\116watermelon.otf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "62570";
+    src: url("C:\Users\kny20\Desktop\가죽공방\62570체.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrap {
+  zoom: 0.75;
+}
+
+
+body{
+    background-color: #2B3122;
+}
+a{
+    color: #C37A2B;
+    text-decoration: none;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+.header{
+    width: 100%;
+    height: 90px;
+    padding: 0 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo img{
+    width: 340px; 
+    height: 180px;
+    margin-bottom: 40px;
+}
+.nav-list{
+    width: 1200px;
+    display: flex; /*가로로 배치*/
+    list-style: none; /*점 없애기*/
+    font-family: "HSJiptokki-Black";
+}
+.nav-list a{
+    transition: 0.3s;
+    font-weight: 700; /*폰트 두껍게*/
+}
+
+.nav-list a:hover{
+    color: #ffb347;
+}
+
+.nav-list{
+    font-size: 26px;
+    display: flex;
+    gap: 100px;
+    list-style: none;
+}
+
+.nav-list li{
+    position: relative; /*드롭다운 아래에 나타나게 하는 기준점 역할을함 부모를 기준으로 자식을 위치시킬수있게함*/
+}
+
+.sub-menu{
+    font-size: 22px;
+    width: 150px;
+    position: absolute; /*부모를 기준으로 원하는 위치에 매치해주는거*/
+    top: 30px; /*부모 메뉴로부터 아래로 30px이동*/
+    left: 50%;  /*왼쪽에서 50% 위치까지 이동 이것만 하면 살짝 오른쪽으로 치우침 그래서 밑에*/
+    transform: translateX(-50%); /*50%갔던걸 자기 자신의 절반만큼 왼쪽으로 당겨서 가운데 정렬 됨*/
+    list-style: none;
+
+    display: none; /*처음엔 숨기기*/
+
+    text-align: center;
+}
+
+.sub-menu li{
+    margin-top: 15px; /*메뉴 사이 간격*/
+}
+
+.dropdown:hover .sub-menu{
+    display: block; /*마우스 올리면 나타나기*/
+}
+
+
+.main{
+    display: flex;
+    justify-content: center;
+    padding-top: 200px;
+    padding-bottom: 300px;
+}
+.main img{
+    width: 700px;
+}
+.main-2{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 140px;
+}
+
+.main-3{
+    width: 1000px;
+    margin: 0 auto;
+    padding-bottom: 250px;
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+.main-3 img{
+    width: 420px;
+}
+.main-3-text p{
+    color: #C37A2B;
+    text-align: center;
+    font-size: 24px;
+    font-family: "62570";
+    line-height: 55px;
+    margin-top: 50px;
+}
+.main-3-text h2{
+    color: #C37A2B;
+    font-family: "116watermelon";
+    font-size: 55px;
+    text-align: center; /*가운데정렬*/
+    line-height: 60px; /*글자행단*/
+    letter-spacing: 2px; /*글자자간*/
+}
+
+
+.footer{
+    color: #C37A2B;
+    font-family: "HSJiptokki-Black";
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+    border-top: 1px solid #C37A2B;
+}
+
+.foot-1{
+    padding-top: 50px;
+}
+.foot-2{
+    text-align: right;
+    padding-top: 50px;
+}
+
+
+
+/*페이지2*/
+
+.main-a{
+    color: #C37A2B;
+    font-family: "HSJiptokki-Black";
+    text-align: center;
+    font-size: 60px;
+    padding: 140px;
+    padding-bottom: 200px;
+}
+.co-img{
+    width: 800px;
+    height: auto;
+    padding-bottom: 250px;
+}
+
+/*페이지3*/
+
+.main-b{
+    color: #C37A2B;
+    font-family: "HSJiptokki-Black";
+    text-align: center;
+    font-size: 60px;
+    padding: 140px;
+    padding-bottom: 200px;
+}
+
+
+
+.main-b1{
+    width: 1500px;
+    margin: 0 auto;
+    padding-bottom: 250px;
+    justify-content: center;    
+    display: flex;
+    align-items: center;
+    gap: px;
+}
+.main-b1 img{
+    width: 520px;
+}
+.main-b1-text p{
+    color: #C37A2B;
+    text-align: center;
+    font-size: 20px;
+    font-family: "62570";
+    line-height: 55px;
+    margin-top: 50px;
+}
+.main-b1-text h2{
+    color: #C37A2B;
+    font-family: "116watermelon";
+    font-size: 50px;
+    text-align: center; /*가운데정렬*/
+    line-height: 60px; /*글자행단*/
+    letter-spacing: 2px; /*글자자간*/
+}
+
+/*페이지 4*/
+
+.main-4{
+    display: block;
+    justify-content: center;
+    text-align: center;
+    padding-top: 200px;
+  
+}
+.ansdml{
+    font-family: "HSJiptokki-Black";
+    color: #C37A2B;
+    gap: 10px;
+}
+.ansdml h2{
+    font-size: 40px;
+}
+.ansdml p{
+    font-size: 30px;
+}
+.main-4-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    justify-content: flex-start;
+    gap: 10px ;
+    height: auto;
+    min-height: 0;
+}
+
+.main-4-2 p {
+    margin: 200px 0 10px 0 ;
+    padding: 0 ;
+    font-size: 40px;
+    font-family: "HSJiptokki-Black";
+    color: #C37A2B;
+}
+
+.main-4-2 iframe {
+    margin: 0 auto 200px ;
+    padding: 0 ;
+}
