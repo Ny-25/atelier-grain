@@ -267,69 +267,56 @@ img{
 /* 모바일 */
 @media screen and (max-width: 768px) {
 
-    body {
-        zoom: 1 !important;
-    }
-
     .wrap {
         zoom: 1 !important;
-        width: 100%;
     }
 
     .header {
-        width: 100%;
+        flex-direction: column;
         height: auto;
         padding: 20px;
-        flex-direction: column;
-    }
-
-    .logo img {
-        width: 220px;
-        height: auto;
-        margin: 0 auto;
     }
 
     .nav-list {
         width: 100%;
         gap: 20px;
-        justify-content: center;
         flex-wrap: wrap;
+        justify-content: center;
         font-size: 16px;
-    }
-
-    .main {
-        width: 100%;
-        padding: 80px 20px;
     }
 
     .main-3,
     .main-b1 {
-        width: 100% !important;
-        padding-left: 20px;
-        padding-right: 20px;
+        width: 90% !important;
         flex-direction: column;
     }
 
-    .main-3 img,
-    .main-b1 img {
-        width: 100%;
-        max-width: 420px;
-        height: auto;
+    .co-img {
+        width: 90%;
     }
 
-    .footer {
-        width: 100%;
-        padding: 40px 20px;
-        flex-direction: column;
-        gap: 30px;
+    .main-a,
+    .main-b {
+        padding: 70px 20px;
+        font-size: 36px;
     }
 
-    .foot-2 {
-        text-align: left;
+    .main-4 {
+        padding-top: 80px;
+    }
+
+    .main-4-2 p {
+        margin-top: 80px;
     }
 
     .main-4-2 iframe {
         width: 90% !important;
-        height: 350px !important;
+        height: 300px !important;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 30px;
+        padding: 40px 20px;
     }
 }
